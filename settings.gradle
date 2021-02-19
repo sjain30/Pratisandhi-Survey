@@ -1,0 +1,2 @@
+rootProject.name = "Pratisandhi Survey"
+include ':app'
