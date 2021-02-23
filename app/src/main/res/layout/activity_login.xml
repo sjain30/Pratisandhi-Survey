@@ -14,7 +14,7 @@
         android:background="@drawable/button_design"
         android:elevation="4dp"
         android:padding="8dp"
-        android:text="@string/sign_in"
+        android:text="Log in with Google"
         android:textSize="18sp"
         android:drawablePadding="10dp"
         android:drawableStart="@drawable/google"
