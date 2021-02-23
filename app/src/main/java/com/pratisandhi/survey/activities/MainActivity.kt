@@ -1,4 +1,4 @@
-package com.pratisandhi.survey
+package com.pratisandhi.survey.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,15 +9,27 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
-import com.pratisandhi.survey.activities.LoginActivity
+import com.pratisandhi.survey.R
+import com.pratisandhi.survey.databinding.ActivityLoginBinding
+import com.pratisandhi.survey.databinding.ActivityMainBinding
+import com.sample.viewbinding.activity.viewBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private val binding: ActivityMainBinding by viewBinding()
     private lateinit var mgoogleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        binding.btnSurvey.setOnClickListener {
+            startActivity(Intent(this, Survey::class.java))
+        }
+
+        binding.btnHistory.setOnClickListener {
+            startActivity(Intent(this, History::class.java))
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

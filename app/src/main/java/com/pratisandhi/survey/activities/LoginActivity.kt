@@ -10,7 +10,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
-import com.pratisandhi.survey.MainActivity
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.databinding.ActivityLoginBinding
 import com.pratisandhi.survey.models.LoginViewModel
