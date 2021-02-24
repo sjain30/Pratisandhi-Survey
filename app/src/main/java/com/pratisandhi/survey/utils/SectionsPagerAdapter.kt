@@ -19,9 +19,9 @@ class SectionsPagerAdapter(fm: FragmentManager, private val mContext: Context) :
             0 -> SectionOne()
             1 -> SectionTwo()
             2 -> SectionThree()
-            4 -> SectionFive()
-            5 -> SectionSix()
-            6 -> SectionSeven()
+            3 -> SectionFive()
+            4 -> SectionSix()
+            5 -> SectionSeven()
             else -> SectionOne()
         }
     }
@@ -34,7 +34,6 @@ class SectionsPagerAdapter(fm: FragmentManager, private val mContext: Context) :
             3 -> return "Section Four"
             4 -> return "Section Five"
             5 -> return "Section Six"
-            6 -> return "Section Seven"
             else -> null
         }
     }
