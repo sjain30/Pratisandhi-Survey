@@ -1,4 +1,4 @@
-package com.pratisandhi.survey.fragments
+package com.pratisandhi.survey.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

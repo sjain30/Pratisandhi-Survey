@@ -7,9 +7,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import com.pratisandhi.survey.fragments.SectionOne;
-import com.pratisandhi.survey.fragments.SectionThree;
-import com.pratisandhi.survey.fragments.SectionTwo;
+import com.pratisandhi.survey.view.SectionOne;
+import com.pratisandhi.survey.view.SectionThree;
+import com.pratisandhi.survey.view.SectionTwo;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

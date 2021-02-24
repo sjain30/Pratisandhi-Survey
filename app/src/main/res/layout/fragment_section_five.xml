@@ -1,0 +1,203 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SectionTwo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/fiveQues1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="18"
+            android:text="For what purpose do you usually use condoms?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/fiveAns1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveQues1">
+
+            <RadioButton
+                android:id="@+id/fiveAns1check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Sexual intercourse (Vaginal)" />
+
+            <RadioButton
+                android:id="@+id/fiveAns1check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Sexual intercourse (Anal)" />
+            <RadioButton
+                android:id="@+id/fiveAns1check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Oral Sex" />
+            <RadioButton
+                android:id="@+id/ficexAns1check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="N/A" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fiveQues2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="18"
+            android:text="How effective are condoms in preventing pregnancy?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns1" />
+
+        <RadioGroup
+            android:id="@+id/fiveAns2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveQues2">
+
+            <RadioButton
+                android:id="@+id/fiveAns2check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="100%" />
+
+            <RadioButton
+                android:id="@+id/fiveAns2check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="98%" />
+            <RadioButton
+                android:id="@+id/fiveAns2check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="90%" />
+            <RadioButton
+                android:id="@+id/fiveAns2check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="80%" />
+            <RadioButton
+                android:id="@+id/fiveAns2check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="50%" />
+            <RadioButton
+                android:id="@+id/fiveAns2check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="0%" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fiveQues3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_margin="@dimen/text_margin"
+            android:text="What are the sources you rely on for information related to STIs?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns2" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durex"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveQues3" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:text="Kamasutra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check1" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manforce"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check2" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check3" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kohinoor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check4" />
+
+        <CheckBox
+            android:id="@+id/fiveAns3check6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moods"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check5" />
+        <CheckBox
+            android:id="@+id/fiveAns3check7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nirodh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check6" />
+        <CheckBox
+            android:id="@+id/fiveAns3check8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cupid Ltd."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check7" />
+        <CheckBox
+            android:id="@+id/fiveAns3check9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fiveAns3check8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

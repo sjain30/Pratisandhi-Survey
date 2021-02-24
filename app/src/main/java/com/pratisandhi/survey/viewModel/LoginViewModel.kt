@@ -1,4 +1,4 @@
-package com.pratisandhi.survey.models
+package com.pratisandhi.survey.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

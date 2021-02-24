@@ -1,0 +1,193 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SectionTwo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/sixQues1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="18"
+            android:text="Have you ever used an oral emergency pill?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/sixAns1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixQues1">
+
+            <RadioButton
+                android:id="@+id/sixAns1check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/sixAns1check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+            <RadioButton
+                android:id="@+id/sixAns1check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Not Applicable" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/sixQues2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="18"
+            android:text="For what reason have you used an emergency pill?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixAns1" />
+
+        <RadioGroup
+            android:id="@+id/sixAns2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixQues2">
+
+            <RadioButton
+                android:id="@+id/sixAns2check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Unprotected sex" />
+
+            <RadioButton
+                android:id="@+id/sixAns2check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Primary method failed" />
+            <RadioButton
+                android:id="@+id/sixAns2check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Case of rape" />
+            <RadioButton
+                android:id="@+id/sixAns2check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Prefer not to say" />
+            <RadioButton
+                android:id="@+id/sixAns2check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Not Applicable" />
+
+        </RadioGroup>
+        <TextView
+            android:id="@+id/sixQues3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="18"
+            android:text="How many times would you say you have used an emergency pill in the past three years?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixAns2" />
+
+        <RadioGroup
+            android:id="@+id/sixAns3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixQues3">
+
+            <RadioButton
+                android:id="@+id/sixAns3check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Once" />
+
+            <RadioButton
+                android:id="@+id/sixAns3check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="2-3 times" />
+            <RadioButton
+                android:id="@+id/sixAns3check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="More than 5 times" />
+            <RadioButton
+                android:id="@+id/sixAns3check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="As a regular contraceptive method" />
+            <RadioButton
+                android:id="@+id/sixAns3check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Not Applicable" />
+
+            <TextView
+                android:id="@+id/sixQues4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:layout_margin="@dimen/text_margin"
+                android:text="Are there any barriers you have faced in using emergency pills? If yes, what are they?"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sevenAns4" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sixAns4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:background="#fff"
+                android:textColorHint="#80000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sixQues4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#50ffffff"
+                    android:hint="Barriers"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
