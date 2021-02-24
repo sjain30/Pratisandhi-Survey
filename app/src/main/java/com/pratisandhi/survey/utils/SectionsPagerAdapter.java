@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import com.pratisandhi.survey.fragments.SectionOne;
+import com.pratisandhi.survey.fragments.SectionThree;
 import com.pratisandhi.survey.fragments.SectionTwo;
 
 /**
@@ -30,7 +31,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0 :return new SectionOne();
             case 1 :return new SectionTwo();
-
+            case 2 :return new SectionThree();
         }
         return null;
     }
@@ -38,12 +39,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return position == 0 ? "Section One" : "Section two" ;
+        switch (position){
+            case 0 : return "Section One";
+            case 1 : return "Section Two";
+            case 2 : return "Section Three";
+        }
+        return null;
     }
 
     @Override
     public int getCount() {
-        // Show 5 total pages.
-        return 2;
+        return 3;
     }
 }

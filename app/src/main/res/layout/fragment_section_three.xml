@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SectionThree">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/txt_19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="How often do you use contraceptives?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_19">
+
+        <RadioButton
+            android:id="@+id/radioButton91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="4dp"
+            android:text="Every time I have sexual intercourse" />
+
+        <RadioButton
+            android:id="@+id/radioButton92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Sometimes" />
+
+        <RadioButton
+            android:id="@+id/radioButton93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Never" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Which of the following contraceptives are you familiar with?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup9" />
+
+        <CheckBox
+            android:id="@+id/check16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_20"/>
+
+        <CheckBox
+            android:id="@+id/check17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Control Pills"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check16"/>
+        <CheckBox
+            android:id="@+id/check18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Pill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check17"/>
+        <CheckBox
+            android:id="@+id/check19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intrauterine Devices (IUD)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check18"/>
+        <CheckBox
+            android:id="@+id/check20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None whatsoever"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check19"/>
+
+        <TextView
+            android:id="@+id/txt_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Which of the following contraceptives do you use regularly?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check20" />
+
+        <CheckBox
+            android:id="@+id/check21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_21"/>
+
+        <CheckBox
+            android:id="@+id/check22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Control Pills"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check21"/>
+        <CheckBox
+            android:id="@+id/check23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning Pill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check22"/>
+        <CheckBox
+            android:id="@+id/check24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intrauterine Devices (IUD)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check23"/>
+        <CheckBox
+            android:id="@+id/check25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None whatsoever"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check24"/>
+
+        <TextView
+            android:id="@+id/txt_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Do you think that the current awareness levels on contraception are adequate? "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check25" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_22">
+
+            <RadioButton
+                android:id="@+id/radioButton101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Maybe" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Have you ever experienced any negative side effects from contraceptive usage?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup10" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_23">
+
+            <RadioButton
+                android:id="@+id/radioButton111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Maybe" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="If yes, what side effects have you faced?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup11" />
+
+        <CheckBox
+            android:id="@+id/check26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_24"/>
+
+        <CheckBox
+            android:id="@+id/check27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hives"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check26"/>
+        <CheckBox
+            android:id="@+id/check28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check27"/>
+        <CheckBox
+            android:id="@+id/check29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spotting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check28"/>
+        <CheckBox
+            android:id="@+id/check30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nausea"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check29"/>
+        <CheckBox
+            android:id="@+id/check31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breast Tenderness"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check30"/>
+        <CheckBox
+            android:id="@+id/check32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headache"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check31"/>
+        <CheckBox
+            android:id="@+id/check33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Gain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check32"/>
+        <CheckBox
+            android:id="@+id/check34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missed Periods"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check33"/>
+        <CheckBox
+            android:id="@+id/check35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mood Changes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check34"/>
+
+        <TextView
+            android:id="@+id/txt_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Are you, or will you be comfortable buying contraceptives?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check35" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_25">
+
+            <RadioButton
+                android:id="@+id/radioButton121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Maybe" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Which of the following emotions do you identify with when trying to purchase contraceptives?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup12" />
+
+        <CheckBox
+            android:id="@+id/check36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_26"/>
+
+        <CheckBox
+            android:id="@+id/check37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stressed/Tensed/Nervous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check36"/>
+        <CheckBox
+            android:id="@+id/check38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uncomfortable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check37"/>
+        <CheckBox
+            android:id="@+id/check39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excited"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check38"/>
+        <CheckBox
+            android:id="@+id/check40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check39"/>
+        <CheckBox
+            android:id="@+id/check41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feeling of being judged"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check40"/>
+        <CheckBox
+            android:id="@+id/check42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Embarrassed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check41"/>
+        <CheckBox
+            android:id="@+id/check43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None whatsoever"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check42"/>
+        <CheckBox
+            android:id="@+id/check44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Applicable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check43"/>
+
+        <TextView
+            android:id="@+id/txt_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Are contraceptives easily available near your area of residence?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check44" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_27">
+
+            <RadioButton
+                android:id="@+id/radioButton131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Maybe" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="What are some challenges you face when trying to access contraceptives? (Please write N/A if no challenges were faced)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup13" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:background="#fff"
+            android:textColorHint="#80000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_28">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#50ffffff"
+                android:hint="Answer"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Where will be the most comfortable place for you to buy contraceptives?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText8" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_29">
+
+            <RadioButton
+                android:id="@+id/radioButton141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="24*7 shops" />
+
+            <RadioButton
+                android:id="@+id/radioButton142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Local Chemist" />
+
+            <RadioButton
+                android:id="@+id/radioButton143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Huge Retail Outlet" />
+
+            <RadioButton
+                android:id="@+id/radioButton144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Government Facility" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Who mostly buys the contraceptive that you or your partner uses?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup14" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_30">
+
+            <RadioButton
+                android:id="@+id/radioButton151"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Myself" />
+
+            <RadioButton
+                android:id="@+id/radioButton152"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="My Partner" />
+
+            <RadioButton
+                android:id="@+id/radioButton153"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="My Friend" />
+
+            <RadioButton
+                android:id="@+id/radioButton154"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="My Relative" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Have you ever felt pressured by peers or your partner to not use contraception? "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup15" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_31">
+
+            <RadioButton
+                android:id="@+id/radioButton161"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton162"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton163"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Maybe" />
+
+            <RadioButton
+                android:id="@+id/radioButton164"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Unknowingly, yes" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
