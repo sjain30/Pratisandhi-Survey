@@ -1,54 +1,45 @@
-package com.pratisandhi.survey.utils;
+package com.pratisandhi.survey.utils
 
-import android.content.Context;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import com.pratisandhi.survey.view.SectionOne;
-import com.pratisandhi.survey.view.SectionThree;
-import com.pratisandhi.survey.view.SectionTwo;
+import android.content.Context
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import com.pratisandhi.survey.view.*
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-    private final Context mContext;
-
-    public SectionsPagerAdapter(@NonNull FragmentManager fm, Context mContext) {
-        super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        this.mContext = mContext;
-    }
-
-    @Override
-    public Fragment getItem(int position) {
+class SectionsPagerAdapter(fm: FragmentManager, private val mContext: Context) :
+    FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+    override fun getItem(position: Int): Fragment {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        switch (position){
-            case 0 :return new SectionOne();
-            case 1 :return new SectionTwo();
-            case 2 :return new SectionThree();
+        return when (position) {
+            0 -> SectionOne()
+            1 -> SectionTwo()
+            2 -> SectionThree()
+            4 -> SectionFive()
+            5 -> SectionSix()
+            6 -> SectionSeven()
+            else -> SectionOne()
         }
-        return null;
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0 : return "Section One";
-            case 1 : return "Section Two";
-            case 2 : return "Section Three";
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when (position) {
+            0 -> return "Section One"
+            1 -> return "Section Two"
+            2 -> return "Section Three"
+            3 -> return "Section Four"
+            4 -> return "Section Five"
+            5 -> return "Section Six"
+            6 -> return "Section Seven"
+            else -> null
         }
-        return null;
     }
 
-    @Override
-    public int getCount() {
-        return 3;
+    override fun getCount(): Int {
+        return 7
     }
 }
