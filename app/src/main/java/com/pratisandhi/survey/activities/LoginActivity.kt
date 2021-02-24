@@ -3,6 +3,7 @@ package com.pratisandhi.survey.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -28,6 +29,11 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        try {
+            this.supportActionBar!!.hide()
+        } catch (e: NullPointerException) {
+        }
+
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -52,12 +58,15 @@ class LoginActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == RC_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            binding.pgb.visibility = View.VISIBLE
+            binding.pgb.speed = 2f
             try {
                 val account = task.getResult(ApiException::class.java)
                 viewModel.firebaseAuthWithGoogle(account).observe(this, { check ->
                     if (check) startActivity(Intent(this, MainActivity::class.java)); finish()
                 })
             } catch (e: ApiException) {
+                binding.pgb.visibility = View.INVISIBLE
                 Log.w(TAG, "Google sign in failed", e)
                 toast("Google sign in failed ${e.message}")
             }

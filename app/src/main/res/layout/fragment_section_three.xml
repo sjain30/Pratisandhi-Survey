@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.SectionThree">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,46 +12,51 @@
         android:paddingStart="16dp"
         android:paddingBottom="8dp">
 
-    <TextView
-        android:id="@+id/txt_19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="How often do you use contraceptives?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup9"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:weightSum="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_19">
-
-        <RadioButton
-            android:id="@+id/radioButton91"
+        <TextView
+            android:id="@+id/txt_19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:padding="4dp"
-            android:text="Every time I have sexual intercourse" />
+            android:layout_margin="@dimen/text_margin"
+            android:text="How often do you use contraceptives?"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioButton
-            android:id="@+id/radioButton92"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/radioGroup9"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Sometimes" />
+            android:layout_marginTop="8dp"
+            android:weightSum="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_19">
 
-        <RadioButton
-            android:id="@+id/radioButton93"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Never" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButton91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="4dp"
+                android:textColor="@color/purple_200"
+                android:text="Every time I have sexual intercourse" />
+
+            <RadioButton
+                android:id="@+id/radioButton92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/purple_200"
+                android:text="Sometimes" />
+
+            <RadioButton
+                android:id="@+id/radioButton93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/purple_200"
+                android:text="Never" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/txt_20"
@@ -59,6 +64,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following contraceptives are you familiar with?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup9" />
 
@@ -68,7 +75,8 @@
             android:layout_height="wrap_content"
             android:text="Condom"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_20"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/txt_20" />
 
         <CheckBox
             android:id="@+id/check17"
@@ -76,28 +84,35 @@
             android:layout_height="wrap_content"
             android:text="Birth Control Pills"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check16"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check16" />
+
         <CheckBox
             android:id="@+id/check18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Morning Pill"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check17"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check17" />
+
         <CheckBox
             android:id="@+id/check19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intrauterine Devices (IUD)"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check18"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check18" />
+
         <CheckBox
             android:id="@+id/check20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="None whatsoever"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check19"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check19" />
 
         <TextView
             android:id="@+id/txt_21"
@@ -105,6 +120,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following contraceptives do you use regularly?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check20" />
 
@@ -114,7 +131,8 @@
             android:layout_height="wrap_content"
             android:text="Condom"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_21"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/txt_21" />
 
         <CheckBox
             android:id="@+id/check22"
@@ -122,28 +140,35 @@
             android:layout_height="wrap_content"
             android:text="Birth Control Pills"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check21"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check21" />
+
         <CheckBox
             android:id="@+id/check23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Morning Pill"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check22"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check22" />
+
         <CheckBox
             android:id="@+id/check24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intrauterine Devices (IUD)"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check23"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check23" />
+
         <CheckBox
             android:id="@+id/check25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="None whatsoever"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check24"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check24" />
 
         <TextView
             android:id="@+id/txt_22"
@@ -151,6 +176,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Do you think that the current awareness levels on contraception are adequate? "
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check25" />
 
@@ -169,6 +196,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -176,6 +204,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -183,6 +212,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -192,6 +222,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Have you ever experienced any negative side effects from contraceptive usage?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup10" />
 
@@ -210,6 +242,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -217,6 +250,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -224,6 +258,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -233,6 +268,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="If yes, what side effects have you faced?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup11" />
 
@@ -242,7 +279,8 @@
             android:layout_height="wrap_content"
             android:text="Rash"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_24"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/txt_24" />
 
         <CheckBox
             android:id="@+id/check27"
@@ -250,63 +288,80 @@
             android:layout_height="wrap_content"
             android:text="Hives"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check26"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check26" />
+
         <CheckBox
             android:id="@+id/check28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Allergy"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check27"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check27" />
+
         <CheckBox
             android:id="@+id/check29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Spotting"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check28"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check28" />
+
         <CheckBox
             android:id="@+id/check30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nausea"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check29"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check29" />
+
         <CheckBox
             android:id="@+id/check31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Breast Tenderness"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check30"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check30" />
+
         <CheckBox
             android:id="@+id/check32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Headache"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check31"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check31" />
+
         <CheckBox
             android:id="@+id/check33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight Gain"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check32"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check32" />
+
         <CheckBox
             android:id="@+id/check34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Missed Periods"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check33"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check33" />
+
         <CheckBox
             android:id="@+id/check35"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mood Changes"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check34"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check34" />
 
         <TextView
             android:id="@+id/txt_25"
@@ -314,6 +369,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Are you, or will you be comfortable buying contraceptives?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check35" />
 
@@ -332,6 +389,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -339,6 +397,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -346,6 +405,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -355,6 +415,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following emotions do you identify with when trying to purchase contraceptives?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup12" />
 
@@ -364,7 +426,8 @@
             android:layout_height="wrap_content"
             android:text="Fear"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_26"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/txt_26" />
 
         <CheckBox
             android:id="@+id/check37"
@@ -372,56 +435,71 @@
             android:layout_height="wrap_content"
             android:text="Stressed/Tensed/Nervous"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check36"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check36" />
+
         <CheckBox
             android:id="@+id/check38"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Uncomfortable"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check37"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check37" />
+
         <CheckBox
             android:id="@+id/check39"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Excited"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check38"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check38" />
+
         <CheckBox
             android:id="@+id/check40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Happy"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check39"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check39" />
+
         <CheckBox
             android:id="@+id/check41"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Feeling of being judged"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check40"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check40" />
+
         <CheckBox
             android:id="@+id/check42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Embarrassed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check41"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check41" />
+
         <CheckBox
             android:id="@+id/check43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="None whatsoever"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check42"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check42" />
+
         <CheckBox
             android:id="@+id/check44"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Not Applicable"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/check43"/>
+            android:textColor="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/check43" />
 
         <TextView
             android:id="@+id/txt_27"
@@ -429,6 +507,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Are contraceptives easily available near your area of residence?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check44" />
 
@@ -447,6 +527,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -454,6 +535,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -461,6 +543,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -470,6 +553,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="What are some challenges you face when trying to access contraceptives? (Please write N/A if no challenges were faced)"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup13" />
 
@@ -490,7 +575,7 @@
                 android:backgroundTint="#50ffffff"
                 android:hint="Answer"
                 android:inputType="textPersonName"
-                android:textColor="#000" />
+                android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -499,6 +584,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Where will be the most comfortable place for you to buy contraceptives?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editText8" />
 
@@ -517,6 +604,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="24*7 shops" />
 
             <RadioButton
@@ -524,6 +612,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Local Chemist" />
 
             <RadioButton
@@ -531,6 +620,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Huge Retail Outlet" />
 
             <RadioButton
@@ -538,6 +628,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Government Facility" />
         </RadioGroup>
 
@@ -547,6 +638,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Who mostly buys the contraceptive that you or your partner uses?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup14" />
 
@@ -565,6 +658,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Myself" />
 
             <RadioButton
@@ -572,6 +666,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="My Partner" />
 
             <RadioButton
@@ -579,6 +674,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="My Friend" />
 
             <RadioButton
@@ -586,6 +682,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="My Relative" />
         </RadioGroup>
 
@@ -595,6 +692,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Have you ever felt pressured by peers or your partner to not use contraception? "
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup15" />
 
@@ -613,6 +712,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -620,6 +720,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -627,6 +728,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
 
             <RadioButton
@@ -634,6 +736,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Unknowingly, yes" />
         </RadioGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
