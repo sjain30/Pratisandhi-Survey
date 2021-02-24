@@ -18,6 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Have you heard about sexually transmitted infections such as HIV/AIDS, Chlamydia, Herpes, etc?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -37,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -44,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -54,6 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Have you ever had a STI scare?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns1" />
@@ -73,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -80,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -91,6 +99,8 @@
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
             android:text="What are the sources you rely on for information related to STIs?"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns2" />
 
@@ -98,6 +108,7 @@
             android:id="@+id/sevenAns3check1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
             android:text="Google"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenQues3" />
@@ -108,6 +119,7 @@
             android:layout_height="wrap_content"
             android:ems="15"
             android:text="Social Media handles of Sex-Ed related organisations"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check1" />
 
@@ -116,6 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Government campaigns and efforts"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check2" />
 
@@ -124,6 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Television/Online Advertisements"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check3" />
 
@@ -132,6 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Doctors and medical professionals"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check4" />
 
@@ -140,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="None"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check5" />
 
@@ -150,6 +166,8 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Have you ever gotten tested for STIs? "
             app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             app:layout_constraintTop_toBottomOf="@id/sevenAns3check6" />
 
         <RadioGroup
@@ -167,6 +185,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -174,6 +193,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -184,6 +204,8 @@
             android:layout_height="wrap_content"
             android:ems="15"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Have you ever faced any barriers when getting tested for STIs? If yes, what are they?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns4" />
@@ -205,7 +227,7 @@
                 android:backgroundTint="#50ffffff"
                 android:hint="Barriers"
                 android:inputType="text|number"
-                android:textColor="#000" />
+                android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -213,6 +235,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Do you think getting tested for STIs is important?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns5" />
@@ -232,6 +256,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -239,6 +264,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -246,6 +272,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -255,6 +282,8 @@
             android:layout_height="wrap_content"
             android:ems="15"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Do you think it is important to get tested even if you have one sexual partner?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns6" />
@@ -274,6 +303,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -281,6 +311,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
             <RadioButton
@@ -288,6 +319,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
         </RadioGroup>
 
@@ -296,6 +328,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Has your partner ever gotten tested for STIs?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns7" />
@@ -315,6 +349,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -322,6 +357,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -332,6 +368,8 @@
             android:layout_height="wrap_content"
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Have you ever had a conversation with your partner about their STI status before engaging in sexual activity?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns8" />
@@ -351,6 +389,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -358,6 +397,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -368,6 +408,8 @@
             android:layout_height="wrap_content"
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="If you have multiple sexual partners, do you think it is your responsibility to get tested?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns9" />
@@ -387,6 +429,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -394,6 +437,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
 
         </RadioGroup>
@@ -404,6 +448,8 @@
             android:layout_height="wrap_content"
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Do you think it is only your responsibility to get tested?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns10" />
@@ -423,6 +469,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -430,12 +477,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
             <RadioButton
                 android:id="@+id/sevenAns11check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Maybe" />
 
         </RadioGroup>
@@ -446,6 +495,8 @@
             android:layout_height="wrap_content"
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="If you have only one sexual partner, who would you prefer gets tested?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns11" />
@@ -465,6 +516,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Myself" />
 
             <RadioButton
@@ -472,12 +524,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="My Partner" />
             <RadioButton
                 android:id="@+id/sevenAns12check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Both" />
 
         </RadioGroup>
@@ -488,6 +542,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="What are the sources you rely on for information related to STIs?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns12" />
@@ -498,6 +554,7 @@
             android:layout_height="wrap_content"
             android:text="Fear"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/purple_200"
             app:layout_constraintTop_toBottomOf="@id/sevenQues13" />
 
         <CheckBox
@@ -506,6 +563,7 @@
             android:layout_height="wrap_content"
             android:text="Anxiety"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/purple_200"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check1" />
 
         <CheckBox
@@ -513,6 +571,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tension/Stress"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check2" />
 
@@ -521,6 +580,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Feeling of being judged"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check3" />
 
@@ -530,6 +590,7 @@
             android:layout_height="wrap_content"
             android:text="Obligation"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/purple_200"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check4" />
 
         <CheckBox
@@ -538,6 +599,7 @@
             android:layout_height="wrap_content"
             android:text="None"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/purple_200"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check5" />
 
         <TextView
@@ -546,6 +608,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Have you ever consulted a doctor or a medial professional to get an opinion related to STIs?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns13check6" />
@@ -565,6 +629,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Yes" />
 
             <RadioButton
@@ -572,12 +637,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="No" />
             <RadioButton
                 android:id="@+id/sevenAns14check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="N/A"/>
 
         </RadioGroup>
@@ -587,6 +654,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="What do you think is the best place for you to get tested, if you had to?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns14" />
@@ -606,6 +675,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Multi-specialty hospitals" />
 
             <RadioButton
@@ -613,6 +683,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Certified labs (Dr.Lal Pathlabs, Star Labs etc.)" />
 
             <RadioButton
@@ -620,6 +691,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Government hospitals &amp; labs"/>
 
         </RadioGroup>
@@ -629,6 +701,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="Condoms are the only contraceptive which protects from STIs arising from sexual intercourse."
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns15" />
@@ -648,6 +722,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="True" />
 
             <RadioButton
@@ -655,6 +730,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="False" />
 
         </RadioGroup>

@@ -17,6 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="For what purpose do you usually use condoms?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="Sexual intercourse (Vaginal)" />
 
             <RadioButton
@@ -43,18 +46,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Sexual intercourse (Anal)" />
             <RadioButton
                 android:id="@+id/fiveAns1check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="Oral Sex" />
             <RadioButton
                 android:id="@+id/ficexAns1check4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="N/A" />
 
         </RadioGroup>
@@ -65,6 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:ems="18"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="How effective are condoms in preventing pregnancy?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns1" />
@@ -84,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:padding="4dp"
+                android:textColor="@color/purple_200"
                 android:text="100%" />
 
             <RadioButton
@@ -91,31 +100,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="98%" />
             <RadioButton
                 android:id="@+id/fiveAns2check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="90%" />
             <RadioButton
                 android:id="@+id/fiveAns2check4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="80%" />
             <RadioButton
                 android:id="@+id/fiveAns2check5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
+                android:textColor="@color/purple_200"
                 android:text="50%" />
             <RadioButton
                 android:id="@+id/fiveAns2check6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="0%" />
+                android:text="0%"
+                android:textColor="@color/purple_200"/>
 
         </RadioGroup>
 
@@ -125,6 +139,8 @@
             android:layout_height="wrap_content"
             android:ems="18"
             android:layout_margin="@dimen/text_margin"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
             android:text="What are the sources you rely on for information related to STIs?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns2" />
@@ -134,6 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Durex"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveQues3" />
 
@@ -142,6 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="15"
+            android:textColor="@color/purple_200"
             android:text="Kamasutra"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check1" />
@@ -151,6 +169,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Manforce"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check2" />
 
@@ -159,6 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Skore"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check3" />
 
@@ -167,6 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kohinoor"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check4" />
 
@@ -175,6 +196,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Moods"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check5" />
         <CheckBox
@@ -182,6 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nirodh"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check6" />
         <CheckBox
@@ -189,6 +212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cupid Ltd."
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check7" />
         <CheckBox
@@ -196,6 +220,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Others"
+            android:textColor="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fiveAns3check8"/>
 

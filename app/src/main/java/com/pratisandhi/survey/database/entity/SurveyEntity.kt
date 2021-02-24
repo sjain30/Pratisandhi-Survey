@@ -58,7 +58,7 @@ data class SurveyEntity(
     val if_you_have_only_one_sexual_partner_who_would_you_prefer_gets_tested: String,
     val have_you_ever_consulted_a_doctor_or_a_medial_professional_to_get_an_opinion_related_to_stis: String,
     val what_do_you_think_is_the_best_place_for_you_to_get_tested_if_you_had_to: String,
-    val condoms_are_the_only_contraceptive_which_protects_from_stis_arising_from_sexual_intercourse: String,
+    val condoms_are_the_only_contraceptive_which_protects_from_STIs_arising_from_sexual_intercourse: String,
 
     ) {
     @PrimaryKey(autoGenerate = true)
