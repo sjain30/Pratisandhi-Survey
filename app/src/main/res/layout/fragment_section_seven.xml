@@ -9,8 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
 
         <TextView
             android:id="@+id/sevenQues1"
@@ -734,6 +734,26 @@
                 android:text="False" />
 
         </RadioGroup>
+
+        <Button
+            android:id="@+id/nextSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sevenAns16"/>
+
+        <Button
+            android:id="@+id/backSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sevenAns16" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

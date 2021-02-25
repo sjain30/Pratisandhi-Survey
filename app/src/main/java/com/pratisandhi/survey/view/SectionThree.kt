@@ -1,19 +1,26 @@
 package com.pratisandhi.survey.view
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.pratisandhi.survey.R
+import com.pratisandhi.survey.activities.Survey
+import com.pratisandhi.survey.databinding.FragmentSectionThreeBinding
+import com.sample.viewbinding.fragment.viewBinding
 
-class SectionThree : Fragment() {
+class SectionThree : Fragment(R.layout.fragment_section_three) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_section_three, container, false)
+    private val binding: FragmentSectionThreeBinding by viewBinding()
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.nextThree.setOnClickListener {
+            (activity as Survey).binding.viewPager.currentItem += 1
+        }
+
+        binding.backThree.setOnClickListener {
+            (activity as Survey).binding.viewPager.currentItem -= 1
+        }
     }
 }

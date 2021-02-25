@@ -1,27 +1,31 @@
 package com.pratisandhi.survey.view
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
+import com.pratisandhi.survey.activities.Survey
+import com.pratisandhi.survey.databinding.FragmentSectionFiveBinding
 import com.pratisandhi.survey.viewModel.SectionFiveViewModel
+import com.sample.viewbinding.fragment.viewBinding
 
-class SectionFive : Fragment() {
+class SectionFive : Fragment(R.layout.fragment_section_five) {
 
-    companion object {
-        fun newInstance() = SectionFive()
-    }
-
+    private val binding: FragmentSectionFiveBinding by viewBinding()
     private lateinit var viewModel: SectionFiveViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_section_five, container, false)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.nextFive.setOnClickListener {
+            (activity as Survey).binding.viewPager.currentItem += 1
+        }
+
+        binding.backFive.setOnClickListener {
+            (activity as Survey).binding.viewPager.currentItem -= 1
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
