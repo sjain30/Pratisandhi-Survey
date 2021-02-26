@@ -23,7 +23,7 @@ class SectionOneViewModel(application: Application) : AndroidViewModel(applicati
             "","","","",
             "","","",""
                 ,"","",""
-                ,"","","")
+                ,"","","","")
             SurveyDatabase(getApplication()).getSurveyDao().add(survey)
             Toast.makeText(getApplication(), "Survey submitted", Toast.LENGTH_SHORT).show()
         }

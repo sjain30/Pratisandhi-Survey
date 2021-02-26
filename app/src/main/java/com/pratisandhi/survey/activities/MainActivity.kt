@@ -49,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     private fun exportData() {
         val sqliteToExcel = SQLiteToExcel(this, "SurveyDatabase", "/storage/emulated/0/Download/")
         val prettyNameMapping = HashMap<String, String>()
-        prettyNameMapping["do_you_belong_to_a_Rural_or_an_Urban_setting"] = "Do you belong to a Rural or an Urban setting?"
+        prettyNameMapping["ques1"] = "Name"
+        prettyNameMapping["ques8"] = "Do you belong to a Rural or an Urban setting?"
         sqliteToExcel.setPrettyNameMapping(prettyNameMapping)
         sqliteToExcel.exportSingleTable(
             "SurveyEntity",
