@@ -10,9 +10,10 @@ import kotlinx.coroutines.launch
 
 class SectionOneViewModel(application: Application) : AndroidViewModel(application) {
 
-    fun addSurvey(name: String) {
+    fun addSurvey(name: String, email:String, contact:String, age:String, city:String, sex:String, gender:String,
+    rural:String, status:String) {
         viewModelScope.launch {
-            val survey = SurveyEntity(name,"","","","","","","","","","",
+            val survey = SurveyEntity(name,email,contact,age,city,sex,gender,rural,status,"","",
             "","","","","",
             "","","","",
             "","","",
