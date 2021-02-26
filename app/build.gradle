@@ -76,4 +76,6 @@ dependencies {
     //lottie
     def lottieVersion = "3.4.1"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+    //SQL2Excel
+    implementation 'com.ajts.androidmads.SQLite2Excel:library:1.0.4'
 }

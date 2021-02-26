@@ -370,15 +370,13 @@
             android:entries="@array/spinner1" />
 
         <Button
-            android:id="@+id/nextOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:text="Next"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/next1"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner1"/>
-
+            app:layout_constraintTop_toBottomOf="@id/spinner1"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

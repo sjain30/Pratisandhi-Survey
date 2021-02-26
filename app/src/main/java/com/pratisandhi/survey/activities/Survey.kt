@@ -9,55 +9,13 @@ import com.sample.viewbinding.activity.viewBinding
 class Survey : AppCompatActivity() {
 
     val binding: ActivitySurveyBinding by viewBinding()
-    var currentPage = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-        //Setup viewpager and tablayout
+        //Setup viewpager
         val sectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager, this)
         binding.viewPager.adapter = sectionsPagerAdapter
-
-//        binding.viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener{
-//            override fun onPageScrolled(
-//                position: Int,
-//                positionOffset: Float,
-//                positionOffsetPixels: Int
-//            ) {
-//            }
-//
-//            override fun onPageSelected(position: Int) {
-//                currentPage = position;
-//                if (currentPage == 0) {
-//                    binding.back.isEnabled = false
-//                    binding.next.isEnabled = true
-//                    binding.back.visibility = View.INVISIBLE
-//                } else if (currentPage == 5) {
-//                    binding.back.isEnabled = true
-//                    binding.next.isEnabled = true
-//                    binding.back.visibility = View.VISIBLE
-//                    binding.next.text = "Submit"
-//                } else {
-//                    binding.back.isEnabled = true
-//                    binding.next.isEnabled = true
-//                    binding.back.visibility = View.VISIBLE
-//                    binding.next.text = "NEXT"
-//                }
-//            }
-//
-//            override fun onPageScrollStateChanged(state: Int) {
-//            }
-//
-//        })
-
-//        binding.next.setOnClickListener {
-//            binding.viewPager.currentItem += 1
-//        }
-//
-//        binding.back.setOnClickListener {
-//            binding.viewPager.currentItem -= 1
-//        }
 
     }
 }

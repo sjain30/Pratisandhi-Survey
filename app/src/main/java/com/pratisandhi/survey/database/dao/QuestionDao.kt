@@ -16,6 +16,8 @@ interface QuestionDao {
     suspend fun update(surveyEntity: SurveyEntity)
 
     @Query("select * from SurveyEntity")
-    fun getAnswers():List<SurveyEntity>
+    suspend fun getAnswers():List<SurveyEntity>
 
+    @Query("update SurveyEntity set at_what_age_did_you_first_engage_in_any_form_of_sexual_activity =:value, at_what_age_did_you_first_engage_in_sexual_intercourse =:value1 where id =:uid")
+    suspend fun updateTwo(value: String,value1: String,uid:Int)
 }
