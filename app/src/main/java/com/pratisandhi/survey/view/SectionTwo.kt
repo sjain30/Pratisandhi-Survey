@@ -1,7 +1,6 @@
 package com.pratisandhi.survey.view
 
 import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
@@ -15,9 +14,8 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
     private val binding: FragmentSectionTwoBinding by viewBinding()
     private lateinit var viewModel: SectionTwoViewModel
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SectionTwoViewModel::class.java)
 
         binding.nextTwo.setOnClickListener {

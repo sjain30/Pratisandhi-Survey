@@ -10,7 +10,6 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-
 import com.ajts.androidmads.library.SQLiteToExcel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -19,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.databinding.ActivityMainBinding
 import com.sample.viewbinding.activity.viewBinding
-import java.io.File
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
