@@ -1,7 +1,6 @@
 package com.pratisandhi.survey.viewModel
 
 import android.app.Application
-import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.pratisandhi.survey.database.SurveyDatabase
@@ -26,7 +25,7 @@ class SectionOneViewModel(application: Application) : AndroidViewModel(applicati
                 ,"","",""
                 ,"","","","")
             SurveyDatabase(getApplication()).getSurveyDao().add(survey)
-            Toast.makeText(getApplication(), "Survey submitted", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(getApplication(), "Survey submitted", Toast.LENGTH_SHORT).show()
         }
     }
 

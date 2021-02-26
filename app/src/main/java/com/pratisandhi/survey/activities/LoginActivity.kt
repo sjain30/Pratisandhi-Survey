@@ -13,8 +13,8 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.databinding.ActivityLoginBinding
-import com.pratisandhi.survey.viewModel.LoginViewModel
 import com.pratisandhi.survey.utils.toast
+import com.pratisandhi.survey.viewModel.LoginViewModel
 import com.sample.viewbinding.activity.viewBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -83,7 +83,7 @@ class LoginActivity : AppCompatActivity() {
                 Intent(
                     this,
                     MainActivity::class.java
-                )
+                ).apply { Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK }
             )
             finish()
         }

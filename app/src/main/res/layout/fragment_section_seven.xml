@@ -544,7 +544,7 @@
             android:ems="18"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
-            android:text="What are the sources you rely on for information related to STIs?"
+            android:text="When you think of getting tested, what are the emotions you feel?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns12" />
 

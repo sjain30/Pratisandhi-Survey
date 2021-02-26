@@ -2,7 +2,6 @@ package com.pratisandhi.survey.viewModel
 
 import android.app.Application
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.pratisandhi.survey.database.SurveyDatabase
@@ -20,7 +19,7 @@ class SectionThreeViewModel(application: Application) : AndroidViewModel(applica
             Log.i("TAG", "updateSurvey3: $id")
             SurveyDatabase(getApplication()).getSurveyDao().updateThree(ques19, ques20, ques21, ques22, ques23, ques24, ques25, ques26,
                 ques27, ques28, ques29, ques30, ques31, id)
-            Toast.makeText(getApplication(), "Survey updated", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(getApplication(), "Survey updated", Toast.LENGTH_SHORT).show()
         }
     }
 

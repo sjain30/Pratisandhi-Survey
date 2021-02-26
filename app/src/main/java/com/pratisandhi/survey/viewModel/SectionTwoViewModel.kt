@@ -1,7 +1,6 @@
 package com.pratisandhi.survey.viewModel
 
 import android.app.Application
-import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.pratisandhi.survey.database.SurveyDatabase
@@ -16,7 +15,7 @@ class SectionTwoViewModel(application: Application) : AndroidViewModel(applicati
             val list = SurveyDatabase(getApplication()).getSurveyDao().getAnswers()
             val id = list[list.size - 1].id
             SurveyDatabase(getApplication()).getSurveyDao().updateTwo(age, age1,ques12,ques13,ques14,ques15,ques16,ques17,ques18, id)
-            Toast.makeText(getApplication(), "Survey updated", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(getApplication(), "Survey updated", Toast.LENGTH_SHORT).show()
         }
     }
 

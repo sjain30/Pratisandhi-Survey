@@ -4,19 +4,16 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.pratisandhi.survey.database.SurveyDatabase
-import com.pratisandhi.survey.database.entity.SurveyEntity
 import kotlinx.coroutines.launch
 
 class SectionSixViewModel(application: Application) : AndroidViewModel(application) {
-    fun add(surveyEntity: SurveyEntity){
-        viewModelScope.launch {
-            SurveyDatabase(getApplication()).getSurveyDao().add(surveyEntity)
-        }
-    }
 
-    fun update(surveyEntity: SurveyEntity){
+    fun update(ques35: String, ques36: String, ques37: String, ques38: String) {
         viewModelScope.launch {
-            SurveyDatabase(getApplication()).getSurveyDao().update(surveyEntity)
+            val list = SurveyDatabase(getApplication()).getSurveyDao().getAnswers()
+            val id = list[list.size - 1].id
+            SurveyDatabase(getApplication()).getSurveyDao()
+                .updateSix(ques35, ques36, ques37, ques38, id)
         }
     }
 }
