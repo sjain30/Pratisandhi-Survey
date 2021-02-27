@@ -15,6 +15,7 @@ class Survey : AppCompatActivity() {
 
         //Setup viewpager
         val sectionsPagerAdapter = SectionsPagerAdapter(supportFragmentManager, this)
+        binding.viewPager.offscreenPageLimit = 6
         binding.viewPager.adapter = sectionsPagerAdapter
 
     }

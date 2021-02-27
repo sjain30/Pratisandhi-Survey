@@ -35,27 +35,9 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SectionSevenViewModel::class.java)
 
-        binding.sevenAns5.editText?.doAfterTextChanged {  binding.sevenAns5.error = null }
+        binding.sevenAns5.editText?.doAfterTextChanged { binding.sevenAns5.error = null }
 
         binding.nextSeven.setOnClickListener {
-
-            if (binding.sevenAns1.checkedRadioButtonId == -1 ||
-                binding.sevenAns2.checkedRadioButtonId == -1 ||
-                binding.sevenAns4.checkedRadioButtonId == -1 ||
-                binding.sevenAns6.checkedRadioButtonId == -1 ||
-                binding.sevenAns7.checkedRadioButtonId == -1 ||
-                binding.sevenAns8.checkedRadioButtonId == -1 ||
-                binding.sevenAns9.checkedRadioButtonId == -1 ||
-                binding.sevenAns10.checkedRadioButtonId == -1 ||
-                binding.sevenAns11.checkedRadioButtonId == -1 ||
-                binding.sevenAns12.checkedRadioButtonId == -1 ||
-                binding.sevenAns14.checkedRadioButtonId == -1 ||
-                binding.sevenAns15.checkedRadioButtonId == -1 ||
-                binding.sevenAns16.checkedRadioButtonId == -1
-            ) {
-                context?.toast(getString(R.string.unanswered))
-                return@setOnClickListener
-            }
 
             if (binding.sevenAns5.editText?.text.isNullOrEmpty()) {
                 binding.sevenAns5.error = getString(R.string.blank)
@@ -102,6 +84,26 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 ans1 += "${binding.sevenAns13check5.text}|"
             if (binding.sevenAns13check6.isChecked)
                 ans1 += "${binding.sevenAns13check6.text}|"
+
+            if (binding.sevenAns1.checkedRadioButtonId == -1 ||
+                binding.sevenAns2.checkedRadioButtonId == -1 ||
+                binding.sevenAns4.checkedRadioButtonId == -1 ||
+                binding.sevenAns6.checkedRadioButtonId == -1 ||
+                binding.sevenAns7.checkedRadioButtonId == -1 ||
+                binding.sevenAns8.checkedRadioButtonId == -1 ||
+                binding.sevenAns9.checkedRadioButtonId == -1 ||
+                binding.sevenAns10.checkedRadioButtonId == -1 ||
+                binding.sevenAns11.checkedRadioButtonId == -1 ||
+                binding.sevenAns12.checkedRadioButtonId == -1 ||
+                binding.sevenAns14.checkedRadioButtonId == -1 ||
+                binding.sevenAns15.checkedRadioButtonId == -1 ||
+                binding.sevenAns16.checkedRadioButtonId == -1 ||
+                ans.isEmpty() ||
+                ans1.isEmpty()
+            ) {
+                context?.toast(getString(R.string.unanswered))
+                return@setOnClickListener
+            }
 
             viewModel.update(
                 radio1.text.toString(),

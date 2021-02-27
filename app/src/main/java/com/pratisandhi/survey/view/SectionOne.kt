@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.activities.Survey
+import com.pratisandhi.survey.database.SurveyDatabase
 import com.pratisandhi.survey.databinding.FragmentSectionOneBinding
 import com.pratisandhi.survey.utils.toast
 import com.pratisandhi.survey.viewModel.SectionOneViewModel
@@ -27,16 +28,6 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
         super.onActivityCreated(savedInstanceState)
 
         viewModel = ViewModelProvider(this).get(SectionOneViewModel::class.java)
-//        val survey = viewModel.getSurvey()
-//        survey.let {
-//            if (!survey?.ques10.isNullOrEmpty()){
-//                binding.editText1.editText?.setText(survey?.ques1)
-//                binding.editText2.editText?.setText(survey?.ques2)
-//                binding.editText3.editText?.setText(survey?.ques3)
-//                binding.editText4.editText?.setText(survey?.ques4)
-//                binding.editText5.editText?.setText(survey?.ques5)
-//            }
-//        }
 
         binding.editText1.editText?.doAfterTextChanged { binding.editText1.error = null }
         binding.editText2.editText?.doAfterTextChanged { binding.editText2.error = null }
@@ -88,6 +79,35 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
             radio2 = view?.findViewById(binding.radioGroup2.checkedRadioButtonId)!!
             radio3 = view?.findViewById(binding.radioGroup3.checkedRadioButtonId)!!
 
+//            context?.let { it1 ->
+//                viewModel.getSurvey().observe(viewLifecycleOwner,{
+//                    Log.i("TAG", "onActivityCreated: ${it.ques10}")
+//                    if (it.ques10.isNotEmpty()) {
+//                        viewModel.updateSurvey(
+//                            binding.editText1.editText?.text.toString(),
+//                            binding.editText2.editText?.text.toString(),
+//                            binding.editText3.editText?.text.toString(),
+//                            binding.editText4.editText?.text.toString(),
+//                            binding.editText5.editText?.text.toString(),
+//                            radio1.text.toString(),
+//                            radio2.text.toString(),
+//                            radio3.text.toString(),
+//                            binding.spinner1.selectedItem.toString()
+//                        )
+//                    } else {
+//                        viewModel.addSurvey(
+//                            binding.editText1.editText?.text.toString(),
+//                            binding.editText2.editText?.text.toString(),
+//                            binding.editText3.editText?.text.toString(),
+//                            binding.editText4.editText?.text.toString(),
+//                            binding.editText5.editText?.text.toString(),
+//                            radio1.text.toString(),
+//                            radio2.text.toString(),
+//                            radio3.text.toString(),
+//                            binding.spinner1.selectedItem.toString())
+//                    }
+//                })
+//            }
 
             viewModel.addSurvey(
                 binding.editText1.editText?.text.toString(),
@@ -98,8 +118,8 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
                 radio1.text.toString(),
                 radio2.text.toString(),
                 radio3.text.toString(),
-                binding.spinner1.selectedItem.toString()
-            )
+                binding.spinner1.selectedItem.toString())
+
             (activity as Survey).binding.viewPager.currentItem += 1
         }
 

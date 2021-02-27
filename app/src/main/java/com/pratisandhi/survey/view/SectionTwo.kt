@@ -41,16 +41,6 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
                 return@setOnClickListener
             }
 
-            if (binding.radioGroup4.checkedRadioButtonId == 1 ||
-                binding.radioGroup5.checkedRadioButtonId == 1 ||
-                binding.radioGroup6.checkedRadioButtonId == 1 ||
-                binding.radioGroup7.checkedRadioButtonId == 1 ||
-                binding.radioGroup8.checkedRadioButtonId == 1
-            ) {
-                context?.toast(getString(R.string.unanswered))
-                return@setOnClickListener
-            }
-
             radio1 = view?.findViewById(binding.radioGroup4.checkedRadioButtonId)!!
             radio2 = view?.findViewById(binding.radioGroup5.checkedRadioButtonId)!!
             radio3 = view?.findViewById(binding.radioGroup6.checkedRadioButtonId)!!
@@ -88,6 +78,18 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
                 q17 += binding.check13.text.toString() + " | "
             if (binding.check14.isChecked)
                 q17 += binding.check14.text.toString()
+
+            if (binding.radioGroup4.checkedRadioButtonId == -1 ||
+                binding.radioGroup5.checkedRadioButtonId == -1 ||
+                binding.radioGroup6.checkedRadioButtonId == -1 ||
+                binding.radioGroup7.checkedRadioButtonId == -1 ||
+                binding.radioGroup8.checkedRadioButtonId == -1 ||
+                q14.isEmpty() ||
+                q17.isEmpty()
+            ) {
+                context?.toast(getString(R.string.unanswered))
+                return@setOnClickListener
+            }
 
             viewModel.updateSurvey(
                 binding.editText10.editText?.text.toString(),

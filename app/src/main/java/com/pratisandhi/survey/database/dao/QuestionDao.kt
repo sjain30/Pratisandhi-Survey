@@ -1,5 +1,6 @@
 package com.pratisandhi.survey.database.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -16,6 +17,20 @@ interface QuestionDao {
 
     @Query("select * from SurveyEntity where id =:uid")
     suspend fun getSurvey(uid:Int): SurveyEntity
+
+    @Query("update SurveyEntity set ques1 =:value, ques2 =:value1, ques3 =:value2, ques4 =:value3, ques5 =:value4, ques6 =:value5, ques7 =:value6, ques8 =:value7, ques9 =:value8 where id =:uid")
+    suspend fun updateOne(
+        value: String,
+        value1: String,
+        value2: String,
+        value3: String,
+        value4: String,
+        value5: String,
+        value6: String,
+        value7: String,
+        value8: String,
+        uid: Int
+    )
 
     @Query("update SurveyEntity set ques10 =:value, ques11 =:value1, ques12 =:value2, ques13 =:value3, ques14 =:value4, ques15 =:value5, ques16 =:value6, ques17 =:value7, ques18 =:value8 where id =:uid")
     suspend fun updateTwo(

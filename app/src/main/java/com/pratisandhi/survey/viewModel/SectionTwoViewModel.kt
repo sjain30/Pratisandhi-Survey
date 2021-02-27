@@ -8,8 +8,6 @@ import kotlinx.coroutines.launch
 
 class SectionTwoViewModel(application: Application) : AndroidViewModel(application) {
 
-//    private val id : LiveData<Int>
-
     fun updateSurvey(age: String, age1: String, ques12:String, ques13:String, ques14:String, ques15:String, ques16:String, ques17:String, ques18:String) {
         viewModelScope.launch {
             val list = SurveyDatabase(getApplication()).getSurveyDao().getAnswers()
@@ -18,13 +16,5 @@ class SectionTwoViewModel(application: Application) : AndroidViewModel(applicati
 //            Toast.makeText(getApplication(), "Survey updated", Toast.LENGTH_SHORT).show()
         }
     }
-
-//    private fun getId(): Int {
-//        var id = 0
-//        viewModelScope.launch {
-//
-//        }
-//        return id
-//    }
 
 }

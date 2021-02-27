@@ -31,22 +31,10 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
 
         viewModel = ViewModelProvider(this).get(SectionThreeViewModel::class.java)
 
-        binding.editText8.editText?.doAfterTextChanged {  binding.editText8.error = null }
+        binding.editText8.editText?.doAfterTextChanged { binding.editText8.error = null }
 
         binding.nextThree.setOnClickListener {
 
-            if (binding.radioGroup9.checkedRadioButtonId == -1 ||
-                binding.radioGroup10.checkedRadioButtonId == -1 ||
-                binding.radioGroup11.checkedRadioButtonId == -1 ||
-                binding.radioGroup12.checkedRadioButtonId == -1 ||
-                binding.radioGroup13.checkedRadioButtonId == -1 ||
-                binding.radioGroup14.checkedRadioButtonId == -1 ||
-                binding.radioGroup15.checkedRadioButtonId == -1 ||
-                binding.radioGroup16.checkedRadioButtonId == -1
-            ) {
-                context?.toast(getString(R.string.unanswered))
-                return@setOnClickListener
-            }
 
             if (binding.editText8.editText?.text.isNullOrEmpty()) {
                 binding.editText8.error = getString(R.string.blank)
@@ -127,6 +115,23 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
                 q26 += binding.check43.text.toString() + " | "
             if (binding.check44.isChecked)
                 q26 += binding.check44.text.toString()
+
+            if (binding.radioGroup9.checkedRadioButtonId == -1 ||
+                binding.radioGroup10.checkedRadioButtonId == -1 ||
+                binding.radioGroup11.checkedRadioButtonId == -1 ||
+                binding.radioGroup12.checkedRadioButtonId == -1 ||
+                binding.radioGroup13.checkedRadioButtonId == -1 ||
+                binding.radioGroup14.checkedRadioButtonId == -1 ||
+                binding.radioGroup15.checkedRadioButtonId == -1 ||
+                binding.radioGroup16.checkedRadioButtonId == -1 ||
+                q20.isEmpty() ||
+                q21.isEmpty() ||
+                q24.isEmpty() ||
+                q26.isEmpty()
+                    ) {
+                context?.toast(getString(R.string.unanswered))
+                return@setOnClickListener
+            }
 
 
             viewModel.updateSurvey3(
