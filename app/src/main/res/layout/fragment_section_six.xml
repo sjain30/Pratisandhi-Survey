@@ -190,7 +190,8 @@
             android:layout_margin="@dimen/text_margin"
             android:ems="15"
             android:text="Are there any barriers you have faced in using emergency pills? If yes, what are they?(Please write N/A if no barriers were faced)"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sixAns3" />
 
