@@ -76,7 +76,7 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
             if (binding.check29.isChecked)
                 q24 += binding.check29.text.toString() + " | "
             if (binding.check30.isChecked)
-                q24 += binding.check30.text.toString()
+                q24 += binding.check30.text.toString() + " | "
             if (binding.check31.isChecked)
                 q24 += binding.check31.text.toString() + " | "
             if (binding.check32.isChecked)
@@ -86,7 +86,9 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
             if (binding.check34.isChecked)
                 q24 += binding.check34.text.toString() + " | "
             if (binding.check35.isChecked)
-                q24 += binding.check35.text.toString()
+                q24 += binding.check35.text.toString() + " | "
+            if (binding.check3NA.isChecked)
+                q24 += binding.check3NA.text.toString()
 
             var q26 = ""
             if (binding.check36.isChecked)
@@ -98,7 +100,7 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
             if (binding.check39.isChecked)
                 q26 += binding.check39.text.toString() + " | "
             if (binding.check40.isChecked)
-                q26 += binding.check40.text.toString()
+                q26 += binding.check40.text.toString() + " | "
             if (binding.check41.isChecked)
                 q26 += binding.check41.text.toString() + " | "
             if (binding.check42.isChecked)

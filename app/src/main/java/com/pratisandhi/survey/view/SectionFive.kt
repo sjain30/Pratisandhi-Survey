@@ -48,11 +48,11 @@ class SectionFive : Fragment(R.layout.fragment_section_five) {
             if (binding.fiveAns3check6.isChecked)
                 ans2 += "${binding.fiveAns3check6.text}|"
             if (binding.fiveAns3check7.isChecked)
-                ans2 += "${binding.fiveAns3check7.text})|"
+                ans2 += "${binding.fiveAns3check7.text}|"
             if (binding.fiveAns3check8.isChecked)
                 ans2 += "${binding.fiveAns3check8.text}|"
             if (binding.fiveAns3check9.isChecked)
-                ans2 += "${binding.fiveAns3check9.text}|"
+                ans2 += "${binding.fiveAns3check9.text}"
 
             if (binding.fiveAns1.checkedRadioButtonId == -1 || binding.fiveAns2.checkedRadioButtonId == -1 || ans2.isEmpty()) {
                 context?.toast(getString(R.string.unanswered))

@@ -62,7 +62,7 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
             if (binding.sevenAns3check5.isChecked)
                 ans += "${binding.sevenAns3check5.text}|"
             if (binding.sevenAns3check6.isChecked)
-                ans += "${binding.sevenAns3check6.text}|"
+                ans += "${binding.sevenAns3check6.text}"
 
             var ans1 = ""
             if (binding.sevenAns13check1.isChecked)
@@ -76,7 +76,7 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
             if (binding.sevenAns13check5.isChecked)
                 ans1 += "${binding.sevenAns13check5.text}|"
             if (binding.sevenAns13check6.isChecked)
-                ans1 += "${binding.sevenAns13check6.text}|"
+                ans1 += "${binding.sevenAns13check6.text}"
 
             if (binding.sevenAns1.checkedRadioButtonId == -1 ||
                 binding.sevenAns2.checkedRadioButtonId == -1 ||

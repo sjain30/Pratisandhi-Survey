@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#50ffffff"
                 android:hint="Age"
-                android:inputType="text|number"
+                android:inputType="textPersonName"
                 android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#50ffffff"
                 android:hint="Age"
-                android:inputType="text|number"
+                android:inputType="textPersonName"
                 android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -378,6 +378,14 @@
                 android:checked="false"
                 android:textColor="@color/purple_200"
                 android:text="Maybe" />
+
+            <RadioButton
+                android:id="@+id/radioButton74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/purple_200"
+                android:text="N/A" />
         </RadioGroup>
 
         <TextView
