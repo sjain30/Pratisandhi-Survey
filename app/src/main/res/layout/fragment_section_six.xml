@@ -16,10 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
-            android:textSize="20sp"
-            android:textColor="@color/purple_500"
+            android:ems="15"
             android:text="Have you ever used an oral emergency pill?"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,24 +37,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
-                android:textColor="@color/purple_200"
-                android:text="Yes" />
+                android:text="Yes"
+                android:textColor="@color/purple_200" />
 
             <RadioButton
                 android:id="@+id/sixAns1check2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="No" />
+                android:text="No"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns1check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Not Applicable" />
+                android:text="Not Applicable"
+                android:textColor="@color/purple_200" />
 
         </RadioGroup>
 
@@ -63,10 +63,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
-            android:textSize="20sp"
-            android:textColor="@color/purple_500"
+            android:ems="15"
             android:text="For what reason have you used an emergency pill?"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sixAns1" />
 
@@ -84,49 +84,52 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:padding="4dp"
-                android:text="Unprotected sex" />
+                android:text="Unprotected sex"
+                android:textColor="@color/purple_200" />
 
             <RadioButton
                 android:id="@+id/sixAns2check2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Primary method failed" />
+                android:text="Primary method failed"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns2check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Case of rape" />
+                android:text="Case of rape"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns2check4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Prefer not to say" />
+                android:text="Prefer not to say"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns2check5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Not Applicable" />
+                android:text="Not Applicable"
+                android:textColor="@color/purple_200" />
 
         </RadioGroup>
+
         <TextView
             android:id="@+id/sixQues3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
-            android:textSize="20sp"
-            android:textColor="@color/purple_500"
+            android:ems="15"
             android:text="How many times would you say you have used an emergency pill in the past three years?"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sixAns2" />
 
@@ -144,70 +147,73 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
-                android:textColor="@color/purple_200"
-                android:text="Once" />
+                android:text="Once"
+                android:textColor="@color/purple_200" />
 
             <RadioButton
                 android:id="@+id/sixAns3check2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="2-3 times" />
+                android:text="2-3 times"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns3check3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="More than 5 times" />
+                android:text="More than 5 times"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns3check4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="As a regular contraceptive method" />
+                android:text="As a regular contraceptive method"
+                android:textColor="@color/purple_200" />
+
             <RadioButton
                 android:id="@+id/sixAns3check5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Not Applicable" />
+                android:text="Not Applicable"
+                android:textColor="@color/purple_200" />
         </RadioGroup>
 
-            <TextView
-                android:id="@+id/sixQues4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="15"
-                android:layout_margin="@dimen/text_margin"
-                android:textColor="@color/purple_200"
-                android:text="Are there any barriers you have faced in using emergency pills? If yes, what are they?"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/sixAns3" />
+        <TextView
+            android:id="@+id/sixQues4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:ems="15"
+            android:text="Are there any barriers you have faced in using emergency pills? If yes, what are they?(Please write N/A if no barriers were faced)"
+            android:textColor="@color/purple_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixAns3" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/sixAns4"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="120dp"
-                android:background="#fff"
-                android:textColorHint="#80000000"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/sixQues4">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sixAns4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:background="#fff"
+            android:textColorHint="#80000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sixQues4">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#50ffffff"
-                    android:hint="Barriers"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/purple_200" />
-            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#50ffffff"
+                android:hint="Barriers"
+                android:inputType="textPersonName"
+                android:textColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/nextSix"
             android:layout_width="wrap_content"
@@ -216,7 +222,7 @@
             android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/sixAns4"/>
+            app:layout_constraintTop_toBottomOf="@id/sixAns4" />
 
         <Button
             android:id="@+id/backSix"

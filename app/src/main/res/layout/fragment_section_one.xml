@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Name"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#50ffffff"
                 android:hint="Name"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords"
                 android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Email"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Contact Number"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Age"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="City"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#50ffffff"
                 android:hint="City"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords"
                 android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -175,6 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Sex"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -194,7 +200,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Male" />
 
@@ -229,6 +234,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="Gender"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
@@ -248,7 +254,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Woman" />
 
@@ -290,6 +295,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:ems="15"
             android:text="Do you belong to a Rural or an Urban setting?"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -310,7 +316,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Rural" />
 
@@ -353,6 +358,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             android:text="Marital/Relationship Status"
             app:layout_constraintStart_toStartOf="parent"

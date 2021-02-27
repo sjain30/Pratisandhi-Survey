@@ -18,7 +18,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.databinding.ActivityMainBinding
-import com.pratisandhi.survey.utils.SharedPreference
 import com.sample.viewbinding.activity.viewBinding
 import java.io.File
 import java.text.SimpleDateFormat
@@ -134,7 +133,7 @@ class MainActivity : AppCompatActivity() {
         sqliteToExcel.setPrettyNameMapping(prettyNameMapping)
         sqliteToExcel.exportSingleTable(
             "SurveyEntity",
-            "${SharedPreference.getUsername(this)} ${getTimeStamp()} survey.xls",
+            "survey.xls",
             object : SQLiteToExcel.ExportListener {
                 override fun onStart() {
                     Toast.makeText(this@MainActivity, "Processing!", Toast.LENGTH_SHORT).show()
@@ -152,7 +151,8 @@ class MainActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                     intent.putExtra(Intent.EXTRA_STREAM, uri)
                     Log.i("TAG", "onCompleted: $uri")
-                    this@MainActivity.startActivity(intent)
+//                    if(intent.resolveActivity())
+                    startActivity(Intent.createChooser(intent,"Select"))
                 }
 
                 override fun onError(e: Exception?) {
@@ -198,10 +198,5 @@ class MainActivity : AppCompatActivity() {
                 .requestEmail()
                 .build()
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finish()
     }
 }

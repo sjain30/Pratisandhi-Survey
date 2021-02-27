@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="Have you heard about sexually transmitted infections such as HIV/AIDS, Chlamydia, Herpes, etc?"
@@ -38,7 +38,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -57,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="Have you ever had a STI scare?"
@@ -78,7 +77,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -96,7 +94,7 @@
             android:id="@+id/sevenQues3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:text="What are the sources you rely on for information related to STIs?"
             android:textSize="20sp"
@@ -164,6 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:ems="15"
             android:text="Have you ever gotten tested for STIs? "
             app:layout_constraintStart_toStartOf="parent"
             android:textSize="20sp"
@@ -184,7 +183,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -206,7 +204,7 @@
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
-            android:text="Have you ever faced any barriers when getting tested for STIs? If yes, what are they?"
+            android:text="Have you ever faced any barriers when getting tested for STIs? If yes, what are they?(Please write N/A if no barriers were faced)"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sevenAns4" />
 
@@ -236,6 +234,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             android:text="Do you think getting tested for STIs is important?"
             app:layout_constraintStart_toStartOf="parent"
@@ -255,7 +254,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -301,7 +299,6 @@
                 android:id="@+id/sevenAns7check1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="false"
                 android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
@@ -329,6 +326,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             android:text="Has your partner ever gotten tested for STIs?"
             app:layout_constraintStart_toStartOf="parent"
@@ -348,7 +346,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -366,7 +363,7 @@
             android:id="@+id/sevenQues9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -388,7 +385,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -406,7 +402,7 @@
             android:id="@+id/sevenQues10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -428,7 +424,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -446,7 +441,7 @@
             android:id="@+id/sevenQues11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -468,7 +463,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -493,7 +487,7 @@
             android:id="@+id/sevenQues12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -515,7 +509,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Myself" />
 
@@ -541,7 +534,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="When you think of getting tested, what are the emotions you feel?"
@@ -607,7 +600,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="Have you ever consulted a doctor or a medial professional to get an opinion related to STIs?"
@@ -628,7 +621,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -653,7 +645,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="What do you think is the best place for you to get tested, if you had to?"
@@ -674,7 +666,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Multi-specialty hospitals" />
 
@@ -700,7 +691,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="Condoms are the only contraceptive which protects from STIs arising from sexual intercourse."
@@ -721,7 +712,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="True" />
 

@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="For what purpose do you usually use condoms?"
@@ -37,7 +37,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Sexual intercourse (Vaginal)" />
 
@@ -70,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:ems="18"
+            android:ems="15"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
             android:text="How effective are condoms in preventing pregnancy?"
@@ -91,7 +90,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="100%" />
 
@@ -137,7 +135,7 @@
             android:id="@+id/fiveQues3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="18"
+            android:ems="15"
             android:layout_margin="@dimen/text_margin"
             android:textSize="20sp"
             android:textColor="@color/purple_500"

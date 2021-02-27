@@ -122,6 +122,7 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 radio16.text.toString(),
             )
 
+            context?.toast("Survey Submitted. Thankyou!")
             (activity as Survey).finish()
         }
 

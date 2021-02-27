@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:ems="15"
             android:text="How often do you use contraceptives?"
             android:textColor="@color/purple_500"
             android:textSize="20sp"
@@ -38,7 +39,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Every time I have sexual intercourse" />
 
@@ -66,6 +66,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following contraceptives are you familiar with?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup9" />
@@ -122,6 +123,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following contraceptives do you use regularly?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check20" />
@@ -178,6 +180,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Do you think that the current awareness levels on contraception are adequate? "
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check25" />
@@ -196,7 +199,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -222,6 +224,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:ems="15"
             android:text="Have you ever experienced any negative side effects from contraceptive usage?"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -242,7 +245,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -268,6 +270,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:ems="15"
             android:text="If yes, what side effects have you faced?"
             android:textSize="20sp"
             android:textColor="@color/purple_500"
@@ -371,6 +374,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Are you, or will you be comfortable buying contraceptives?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check35" />
@@ -389,7 +393,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -417,6 +420,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Which of the following emotions do you identify with when trying to purchase contraceptives?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup12" />
@@ -509,6 +513,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Are contraceptives easily available near your area of residence?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check44" />
@@ -527,7 +532,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 
@@ -555,6 +559,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="What are some challenges you face when trying to access contraceptives? (Please write N/A if no challenges were faced)"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup13" />
@@ -586,6 +591,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Where will be the most comfortable place for you to buy contraceptives?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editText8" />
@@ -604,7 +610,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="24*7 shops" />
 
@@ -640,6 +645,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Who mostly buys the contraceptive that you or your partner uses?"
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup14" />
@@ -658,7 +664,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Myself" />
 
@@ -694,6 +699,7 @@
             android:layout_margin="@dimen/text_margin"
             android:text="Have you ever felt pressured by peers or your partner to not use contraception? "
             android:textSize="20sp"
+            android:ems="15"
             android:textColor="@color/purple_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/radioGroup15" />
@@ -712,7 +718,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:padding="4dp"
                 android:textColor="@color/purple_200"
                 android:text="Yes" />
 

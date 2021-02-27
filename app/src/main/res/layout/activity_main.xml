@@ -8,7 +8,7 @@
 
     <android.widget.Button
         android:id="@+id/btn_survey"
-        android:layout_width="120dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:background="@drawable/new_button"
@@ -20,7 +20,7 @@
 
     <android.widget.Button
         android:id="@+id/btn_history"
-        android:layout_width="120dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Export"
         android:textColor="@color/white"
