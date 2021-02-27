@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.core.content.FileProvider
 import com.ajts.androidmads.library.SQLiteToExcel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -17,7 +18,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.databinding.ActivityMainBinding
+import com.pratisandhi.survey.utils.SharedPreference
 import com.sample.viewbinding.activity.viewBinding
+import java.io.File
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -130,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         sqliteToExcel.setPrettyNameMapping(prettyNameMapping)
         sqliteToExcel.exportSingleTable(
             "SurveyEntity",
-            "survey.xls",
+            "${SharedPreference.getUsername(this)} ${getTimeStamp()} survey.xls",
             object : SQLiteToExcel.ExportListener {
                 override fun onStart() {
                     Toast.makeText(this@MainActivity, "Processing!", Toast.LENGTH_SHORT).show()
@@ -138,17 +142,17 @@ class MainActivity : AppCompatActivity() {
 
                 override fun onCompleted(filePath: String?) {
                     Toast.makeText(this@MainActivity, "File downloaded!", Toast.LENGTH_SHORT).show()
-//                    val uri = FileProvider.getUriForFile(
-//                        this@MainActivity,
-//                        this@MainActivity.packageName + ".provider",
-//                        File(filePath)
-//                    )
-//                    val intent = Intent(Intent.ACTION_SEND)
-//                    intent.setDataAndType(uri, "application/vnd.ms-excel")
-//                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-//                    intent.putExtra(Intent.EXTRA_STREAM, uri)
-//                    Log.i("TAG", "onCompleted: \${uri.toString()}")
-//                    this@MainActivity.startActivity(Intent.createChooser(intent, "Select"))
+                    val uri = FileProvider.getUriForFile(
+                        this@MainActivity,
+                        this@MainActivity.packageName + ".provider",
+                        File(filePath)
+                    )
+                    val intent = Intent(Intent.ACTION_VIEW)
+                    intent.setDataAndType(uri, "application/vnd.ms-excel")
+                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                    intent.putExtra(Intent.EXTRA_STREAM, uri)
+                    Log.i("TAG", "onCompleted: $uri")
+                    this@MainActivity.startActivity(intent)
                 }
 
                 override fun onError(e: Exception?) {
@@ -157,6 +161,13 @@ class MainActivity : AppCompatActivity() {
                     Log.e("TAG", "onError: ${e.toString()}")
                 }
             })
+    }
+
+    private fun getTimeStamp() : String {
+        val yourmilliseconds = System.currentTimeMillis()
+        val sdf = SimpleDateFormat("MMM dd,yyyy HH:mm", Locale.getDefault())
+        val resultdate = Date(yourmilliseconds)
+        return sdf.format(resultdate)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

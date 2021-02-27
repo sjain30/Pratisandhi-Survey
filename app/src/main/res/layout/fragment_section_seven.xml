@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#50ffffff"
                 android:hint="Barriers"
-                android:inputType="text|number"
+                android:inputType="textPersonName"
                 android:textColor="@color/purple_200" />
         </com.google.android.material.textfield.TextInputLayout>
 

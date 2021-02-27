@@ -1,6 +1,9 @@
 package com.pratisandhi.survey.view
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.RadioButton
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
@@ -20,17 +23,27 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
     private lateinit var radio2: RadioButton
     private lateinit var radio3: RadioButton
 
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SectionOneViewModel::class.java)
 
-        binding.editText1.editText?.doAfterTextChanged {  binding.editText1.error = null }
-        binding.editText2.editText?.doAfterTextChanged {  binding.editText2.error = null }
-        binding.editText3.editText?.doAfterTextChanged {  binding.editText3.error = null}
-        binding.editText4.editText?.doAfterTextChanged {  binding.editText4.error = null}
-        binding.editText5.editText?.doAfterTextChanged {  binding.editText5.error = null}
-            binding.next1.setOnClickListener {
+        viewModel = ViewModelProvider(this).get(SectionOneViewModel::class.java)
+//        val survey = viewModel.getSurvey()
+//        survey.let {
+//            if (!survey?.ques10.isNullOrEmpty()){
+//                binding.editText1.editText?.setText(survey?.ques1)
+//                binding.editText2.editText?.setText(survey?.ques2)
+//                binding.editText3.editText?.setText(survey?.ques3)
+//                binding.editText4.editText?.setText(survey?.ques4)
+//                binding.editText5.editText?.setText(survey?.ques5)
+//            }
+//        }
+
+        binding.editText1.editText?.doAfterTextChanged { binding.editText1.error = null }
+        binding.editText2.editText?.doAfterTextChanged { binding.editText2.error = null }
+        binding.editText3.editText?.doAfterTextChanged { binding.editText3.error = null }
+        binding.editText4.editText?.doAfterTextChanged { binding.editText4.error = null }
+        binding.editText5.editText?.doAfterTextChanged { binding.editText5.error = null }
+        binding.next1.setOnClickListener {
 
             if (binding.editText1.editText?.text.isNullOrEmpty()) {
                 binding.editText1.error = getString(R.string.blank)
@@ -49,6 +62,12 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
                 binding.editText3.error = getString(R.string.blank)
                 return@setOnClickListener
             }
+
+            if (binding.editText3.editText?.text?.length != 10) {
+                binding.editText3.error = "Number should be of 10 digits"
+                return@setOnClickListener
+            }
+
             if (binding.editText4.editText?.text.isNullOrEmpty()) {
                 binding.editText4.error = getString(R.string.blank)
                 return@setOnClickListener

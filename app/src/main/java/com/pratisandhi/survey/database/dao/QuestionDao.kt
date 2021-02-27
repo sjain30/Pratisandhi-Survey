@@ -14,6 +14,9 @@ interface QuestionDao {
     @Query("select * from SurveyEntity")
     suspend fun getAnswers(): List<SurveyEntity>
 
+    @Query("select * from SurveyEntity where id =:uid")
+    suspend fun getSurvey(uid:Int): SurveyEntity
+
     @Query("update SurveyEntity set ques10 =:value, ques11 =:value1, ques12 =:value2, ques13 =:value3, ques14 =:value4, ques15 =:value5, ques16 =:value6, ques17 =:value7, ques18 =:value8 where id =:uid")
     suspend fun updateTwo(
         value: String,

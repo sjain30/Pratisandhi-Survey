@@ -91,17 +91,17 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
 
             var ans1 = ""
             if (binding.sevenAns13check1.isChecked)
-                ans += "${binding.sevenAns13check1.text}|"
+                ans1 += "${binding.sevenAns13check1.text}|"
             if (binding.sevenAns13check2.isChecked)
-                ans += "${binding.sevenAns13check2.text}|"
+                ans1 += "${binding.sevenAns13check2.text}|"
             if (binding.sevenAns13check3.isChecked)
-                ans += "${binding.sevenAns13check3.text}|"
+                ans1 += "${binding.sevenAns13check3.text}|"
             if (binding.sevenAns13check4.isChecked)
-                ans += "${binding.sevenAns13check4.text}|"
+                ans1 += "${binding.sevenAns13check4.text}|"
             if (binding.sevenAns13check5.isChecked)
-                ans += "${binding.sevenAns13check5.text}|"
+                ans1 += "${binding.sevenAns13check5.text}|"
             if (binding.sevenAns13check6.isChecked)
-                ans += "${binding.sevenAns13check6.text}|"
+                ans1 += "${binding.sevenAns13check6.text}|"
 
             viewModel.update(
                 radio1.text.toString(),
@@ -121,6 +121,8 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 radio15.text.toString(),
                 radio16.text.toString(),
             )
+
+            (activity as Survey).finish()
         }
 
         binding.backSeven.setOnClickListener {

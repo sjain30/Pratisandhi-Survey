@@ -36,17 +36,6 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-
-        googleAuth()
-        binding.googleSign.setOnClickListener {
-            googleAuth()
-        }
-
     }
 
     private fun googleAuth() {
@@ -86,6 +75,18 @@ class LoginActivity : AppCompatActivity() {
                 ).apply { Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK }
             )
             finish()
+        }
+        else {
+            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+            mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
+
+            googleAuth()
+            binding.googleSign.setOnClickListener {
+                googleAuth()
+            }
         }
     }
 }
