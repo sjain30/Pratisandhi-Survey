@@ -41,6 +41,12 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
 
             if (binding.sevenAns5.editText?.text.isNullOrEmpty()) {
                 binding.sevenAns5.error = getString(R.string.blank)
+                binding.sevenAns5.requestFocus()
+                return@setOnClickListener
+            }
+            if(!binding.checkAcknowledge.isChecked){
+                binding.checkAcknowledge.error = "Please accept this acknowledgment"
+                binding.checkAcknowledge.requestFocus()
                 return@setOnClickListener
             }
             radio1 = view?.findViewById(binding.sevenAns1.checkedRadioButtonId)!!
@@ -124,7 +130,7 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 radio16.text.toString(),
             )
 
-            context?.toast("Survey Submitted. Thankyou!")
+            context?.toast("Survey Submitted. Thank you!")
             (activity as Survey).finish()
         }
 

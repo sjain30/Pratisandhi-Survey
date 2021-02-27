@@ -34,10 +34,12 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
 
             if (binding.editText10.editText?.text.isNullOrEmpty()) {
                 binding.editText10.error = getString(R.string.blank)
+                binding.editText10.requestFocus()
                 return@setOnClickListener
             }
             if (binding.editText11.editText?.text.isNullOrEmpty()) {
                 binding.editText11.error = getString(R.string.blank)
+                binding.editText11.requestFocus()
                 return@setOnClickListener
             }
 

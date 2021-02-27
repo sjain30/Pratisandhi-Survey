@@ -38,6 +38,7 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
 
             if (binding.editText8.editText?.text.isNullOrEmpty()) {
                 binding.editText8.error = getString(R.string.blank)
+                binding.editText8.requestFocus()
                 return@setOnClickListener
             }
 

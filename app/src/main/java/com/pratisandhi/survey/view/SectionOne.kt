@@ -1,16 +1,12 @@
 package com.pratisandhi.survey.view
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.RadioButton
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
 import com.pratisandhi.survey.activities.Survey
-import com.pratisandhi.survey.database.SurveyDatabase
 import com.pratisandhi.survey.databinding.FragmentSectionOneBinding
 import com.pratisandhi.survey.utils.toast
 import com.pratisandhi.survey.viewModel.SectionOneViewModel
@@ -38,33 +34,40 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
 
             if (binding.editText1.editText?.text.isNullOrEmpty()) {
                 binding.editText1.error = getString(R.string.blank)
+                binding.editText1.requestFocus()
                 return@setOnClickListener
             }
             if (binding.editText2.editText?.text.isNullOrEmpty()) {
                 binding.editText2.error = getString(R.string.blank)
+                binding.editText2.requestFocus()
                 return@setOnClickListener
             }
             if (!isEmailValid(binding.editText2.editText?.text.toString())) {
                 binding.editText2.error = "Invalid Email"
+                binding.editText2.requestFocus()
                 return@setOnClickListener
             }
 
             if (binding.editText3.editText?.text.isNullOrEmpty()) {
                 binding.editText3.error = getString(R.string.blank)
+                binding.editText3.requestFocus()
                 return@setOnClickListener
             }
 
             if (binding.editText3.editText?.text?.length != 10) {
                 binding.editText3.error = "Number should be of 10 digits"
+                binding.editText3.requestFocus()
                 return@setOnClickListener
             }
 
             if (binding.editText4.editText?.text.isNullOrEmpty()) {
                 binding.editText4.error = getString(R.string.blank)
+                binding.editText4.requestFocus()
                 return@setOnClickListener
             }
             if (binding.editText5.editText?.text.isNullOrEmpty()) {
                 binding.editText5.error = getString(R.string.blank)
+                binding.editText5.requestFocus()
                 return@setOnClickListener
             }
 

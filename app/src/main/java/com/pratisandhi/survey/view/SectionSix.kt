@@ -38,6 +38,7 @@ class SectionSix : Fragment(R.layout.fragment_section_six) {
 
             if(binding.sixAns4.editText?.text.isNullOrEmpty()){
                 binding.sixAns4.error = getString(R.string.blank)
+                binding.sixAns4.requestFocus()
                 return@setOnClickListener
             }
             radio1 = view?.findViewById(binding.sixAns1.checkedRadioButtonId)!!
