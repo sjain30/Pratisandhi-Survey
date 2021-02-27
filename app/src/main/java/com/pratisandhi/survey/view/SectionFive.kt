@@ -34,9 +34,6 @@ class SectionFive : Fragment(R.layout.fragment_section_five) {
 
         binding.nextFive.setOnClickListener {
 
-            radio1 = view?.findViewById(binding.fiveAns1.checkedRadioButtonId)!!
-            radio2 = view?.findViewById(binding.fiveAns2.checkedRadioButtonId)!!
-
             var ans2 = ""
             if (binding.fiveAns3check1.isChecked)
                 ans2 += "${binding.fiveAns3check1.text}|"
@@ -61,6 +58,9 @@ class SectionFive : Fragment(R.layout.fragment_section_five) {
                 context?.toast(getString(R.string.unanswered))
                 return@setOnClickListener
             }
+
+            radio1 = view?.findViewById(binding.fiveAns1.checkedRadioButtonId)!!
+            radio2 = view?.findViewById(binding.fiveAns2.checkedRadioButtonId)!!
 
             viewModel.update(radio1.text.toString(), radio2.text.toString(), ans2)
 

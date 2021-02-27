@@ -49,19 +49,6 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 binding.checkAcknowledge.requestFocus()
                 return@setOnClickListener
             }
-            radio1 = view?.findViewById(binding.sevenAns1.checkedRadioButtonId)!!
-            radio2 = view?.findViewById(binding.sevenAns2.checkedRadioButtonId)!!
-            radio4 = view?.findViewById(binding.sevenAns4.checkedRadioButtonId)!!
-            radio6 = view?.findViewById(binding.sevenAns6.checkedRadioButtonId)!!
-            radio7 = view?.findViewById(binding.sevenAns7.checkedRadioButtonId)!!
-            radio8 = view?.findViewById(binding.sevenAns8.checkedRadioButtonId)!!
-            radio9 = view?.findViewById(binding.sevenAns9.checkedRadioButtonId)!!
-            radio10 = view?.findViewById(binding.sevenAns10.checkedRadioButtonId)!!
-            radio11 = view?.findViewById(binding.sevenAns11.checkedRadioButtonId)!!
-            radio12 = view?.findViewById(binding.sevenAns12.checkedRadioButtonId)!!
-            radio14 = view?.findViewById(binding.sevenAns14.checkedRadioButtonId)!!
-            radio15 = view?.findViewById(binding.sevenAns15.checkedRadioButtonId)!!
-            radio16 = view?.findViewById(binding.sevenAns16.checkedRadioButtonId)!!
 
             var ans = ""
             if (binding.sevenAns3check1.isChecked)
@@ -110,6 +97,20 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
                 context?.toast(getString(R.string.unanswered))
                 return@setOnClickListener
             }
+
+            radio1 = view?.findViewById(binding.sevenAns1.checkedRadioButtonId)!!
+            radio2 = view?.findViewById(binding.sevenAns2.checkedRadioButtonId)!!
+            radio4 = view?.findViewById(binding.sevenAns4.checkedRadioButtonId)!!
+            radio6 = view?.findViewById(binding.sevenAns6.checkedRadioButtonId)!!
+            radio7 = view?.findViewById(binding.sevenAns7.checkedRadioButtonId)!!
+            radio8 = view?.findViewById(binding.sevenAns8.checkedRadioButtonId)!!
+            radio9 = view?.findViewById(binding.sevenAns9.checkedRadioButtonId)!!
+            radio10 = view?.findViewById(binding.sevenAns10.checkedRadioButtonId)!!
+            radio11 = view?.findViewById(binding.sevenAns11.checkedRadioButtonId)!!
+            radio12 = view?.findViewById(binding.sevenAns12.checkedRadioButtonId)!!
+            radio14 = view?.findViewById(binding.sevenAns14.checkedRadioButtonId)!!
+            radio15 = view?.findViewById(binding.sevenAns15.checkedRadioButtonId)!!
+            radio16 = view?.findViewById(binding.sevenAns16.checkedRadioButtonId)!!
 
             viewModel.update(
                 radio1.text.toString(),

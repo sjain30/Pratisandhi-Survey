@@ -288,7 +288,28 @@
                 android:checked="false"
                 android:textColor="@color/purple_200"
                 android:text="Non-binary" />
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="@color/purple_200"
+                android:text="" />
         </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="2dp"
+            android:enabled="false"
+            android:hint="Others"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="@id/radioGroup2"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/txt_8"
@@ -342,14 +363,6 @@
                 android:checked="false"
                 android:textColor="@color/purple_200"
                 android:text="Metropolitan" />
-
-            <RadioButton
-                android:id="@+id/radioButton14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="false"
-                android:textColor="@color/purple_200"
-                android:text="Non-binary" />
         </RadioGroup>
 
         <TextView

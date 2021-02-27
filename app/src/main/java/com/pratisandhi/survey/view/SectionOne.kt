@@ -2,6 +2,7 @@ package com.pratisandhi.survey.view
 
 import android.os.Bundle
 import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -30,6 +31,20 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
         binding.editText3.editText?.doAfterTextChanged { binding.editText3.error = null }
         binding.editText4.editText?.doAfterTextChanged { binding.editText4.error = null }
         binding.editText5.editText?.doAfterTextChanged { binding.editText5.error = null }
+
+        // This overrides the radiogroup onCheckListener
+        binding.radioGroup2.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId ->
+            // This will get the radiobutton that has changed in its check state
+            if (checkedId == R.id.radioButton14){
+                binding.editTextOther.isEnabled = true
+                binding.editTextOther.requestFocus()
+            }
+            else {
+                binding.editTextOther.isEnabled = false
+                binding.editTextOther.setText("")
+            }
+        })
+
         binding.next1.setOnClickListener {
 
             if (binding.editText1.editText?.text.isNullOrEmpty()) {
@@ -82,6 +97,10 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
             radio2 = view?.findViewById(binding.radioGroup2.checkedRadioButtonId)!!
             radio3 = view?.findViewById(binding.radioGroup3.checkedRadioButtonId)!!
 
+            val otherGender = if (binding.radioGroup2.checkedRadioButtonId == R.id.radioButton14)
+                binding.editTextOther.text.toString()
+            else
+                radio2.text.toString()
 //            context?.let { it1 ->
 //                viewModel.getSurvey().observe(viewLifecycleOwner,{
 //                    Log.i("TAG", "onActivityCreated: ${it.ques10}")
@@ -119,9 +138,10 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
                 binding.editText4.editText?.text.toString(),
                 binding.editText5.editText?.text.toString(),
                 radio1.text.toString(),
-                radio2.text.toString(),
+                otherGender,
                 radio3.text.toString(),
-                binding.spinner1.selectedItem.toString())
+                binding.spinner1.selectedItem.toString()
+            )
 
             (activity as Survey).binding.viewPager.currentItem += 1
         }

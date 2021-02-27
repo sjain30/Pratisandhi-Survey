@@ -43,12 +43,6 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
                 return@setOnClickListener
             }
 
-            radio1 = view?.findViewById(binding.radioGroup4.checkedRadioButtonId)!!
-            radio2 = view?.findViewById(binding.radioGroup5.checkedRadioButtonId)!!
-            radio3 = view?.findViewById(binding.radioGroup6.checkedRadioButtonId)!!
-            radio4 = view?.findViewById(binding.radioGroup7.checkedRadioButtonId)!!
-            radio5 = view?.findViewById(binding.radioGroup8.checkedRadioButtonId)!!
-
             var q14 = ""
             if (binding.check1.isChecked)
                 q14 += binding.check1.text.toString() + " | "
@@ -92,6 +86,12 @@ class SectionTwo : Fragment(R.layout.fragment_section_two) {
                 context?.toast(getString(R.string.unanswered))
                 return@setOnClickListener
             }
+
+            radio1 = view?.findViewById(binding.radioGroup4.checkedRadioButtonId)!!
+            radio2 = view?.findViewById(binding.radioGroup5.checkedRadioButtonId)!!
+            radio3 = view?.findViewById(binding.radioGroup6.checkedRadioButtonId)!!
+            radio4 = view?.findViewById(binding.radioGroup7.checkedRadioButtonId)!!
+            radio5 = view?.findViewById(binding.radioGroup8.checkedRadioButtonId)!!
 
             viewModel.updateSurvey(
                 binding.editText10.editText?.text.toString(),

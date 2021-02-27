@@ -42,15 +42,6 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
                 return@setOnClickListener
             }
 
-            radio1 = view.findViewById(binding.radioGroup9.checkedRadioButtonId)!!
-            radio2 = view.findViewById(binding.radioGroup10.checkedRadioButtonId)!!
-            radio3 = view.findViewById(binding.radioGroup11.checkedRadioButtonId)!!
-            radio4 = view.findViewById(binding.radioGroup12.checkedRadioButtonId)!!
-            radio5 = view.findViewById(binding.radioGroup13.checkedRadioButtonId)!!
-            radio6 = view.findViewById(binding.radioGroup14.checkedRadioButtonId)!!
-            radio7 = view.findViewById(binding.radioGroup15.checkedRadioButtonId)!!
-            radio8 = view.findViewById(binding.radioGroup16.checkedRadioButtonId)!!
-
             var q20 = ""
             if (binding.check16.isChecked)
                 q20 += binding.check16.text.toString() + " | "
@@ -129,11 +120,19 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
                 q21.isEmpty() ||
                 q24.isEmpty() ||
                 q26.isEmpty()
-                    ) {
+            ) {
                 context?.toast(getString(R.string.unanswered))
                 return@setOnClickListener
             }
 
+            radio1 = view.findViewById(binding.radioGroup9.checkedRadioButtonId)!!
+            radio2 = view.findViewById(binding.radioGroup10.checkedRadioButtonId)!!
+            radio3 = view.findViewById(binding.radioGroup11.checkedRadioButtonId)!!
+            radio4 = view.findViewById(binding.radioGroup12.checkedRadioButtonId)!!
+            radio5 = view.findViewById(binding.radioGroup13.checkedRadioButtonId)!!
+            radio6 = view.findViewById(binding.radioGroup14.checkedRadioButtonId)!!
+            radio7 = view.findViewById(binding.radioGroup15.checkedRadioButtonId)!!
+            radio8 = view.findViewById(binding.radioGroup16.checkedRadioButtonId)!!
 
             viewModel.updateSurvey3(
                 radio1.text.toString(),
