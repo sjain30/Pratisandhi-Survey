@@ -2,6 +2,7 @@ package com.pratisandhi.survey.view
 
 import android.os.Bundle
 import android.widget.RadioButton
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
@@ -10,8 +11,6 @@ import com.pratisandhi.survey.databinding.FragmentSectionOneBinding
 import com.pratisandhi.survey.utils.toast
 import com.pratisandhi.survey.viewModel.SectionOneViewModel
 import com.sample.viewbinding.fragment.viewBinding
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 
 class SectionOne : Fragment(R.layout.fragment_section_one) {
 
@@ -26,7 +25,12 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SectionOneViewModel::class.java)
 
-        binding.next1.setOnClickListener {
+        binding.editText1.editText?.doAfterTextChanged {  binding.editText1.error = null }
+        binding.editText2.editText?.doAfterTextChanged {  binding.editText2.error = null }
+        binding.editText3.editText?.doAfterTextChanged {  binding.editText3.error = null}
+        binding.editText4.editText?.doAfterTextChanged {  binding.editText4.error = null}
+        binding.editText5.editText?.doAfterTextChanged {  binding.editText5.error = null}
+            binding.next1.setOnClickListener {
 
             if (binding.editText1.editText?.text.isNullOrEmpty()) {
                 binding.editText1.error = getString(R.string.blank)
@@ -36,7 +40,7 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
                 binding.editText2.error = getString(R.string.blank)
                 return@setOnClickListener
             }
-            if (isEmailValid(binding.editText2.editText?.text.toString())) {
+            if (!isEmailValid(binding.editText2.editText?.text.toString())) {
                 binding.editText2.error = "Invalid Email"
                 return@setOnClickListener
             }
@@ -77,15 +81,12 @@ class SectionOne : Fragment(R.layout.fragment_section_one) {
                 radio3.text.toString(),
                 binding.spinner1.selectedItem.toString()
             )
+            (activity as Survey).binding.viewPager.currentItem += 1
         }
 
-        (activity as Survey).binding.viewPager.currentItem += 1
     }
 
-    fun isEmailValid(email: String?): Boolean {
-        val expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$"
-        val pattern: Pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE)
-        val matcher: Matcher = pattern.matcher(email)
-        return matcher.matches()
+    private fun isEmailValid(email: String): Boolean {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email.trim()).matches()
     }
 }

@@ -2,6 +2,7 @@ package com.pratisandhi.survey.view
 
 import android.os.Bundle
 import android.widget.RadioButton
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
@@ -33,6 +34,8 @@ class SectionSeven : Fragment(R.layout.fragment_section_seven) {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SectionSevenViewModel::class.java)
+
+        binding.sevenAns5.editText?.doAfterTextChanged {  binding.sevenAns5.error = null }
 
         binding.nextSeven.setOnClickListener {
 

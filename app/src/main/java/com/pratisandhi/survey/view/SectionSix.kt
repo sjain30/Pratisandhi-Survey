@@ -2,6 +2,7 @@ package com.pratisandhi.survey.view
 
 import android.os.Bundle
 import android.widget.RadioButton
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
@@ -24,6 +25,7 @@ class SectionSix : Fragment(R.layout.fragment_section_six) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(SectionSixViewModel::class.java)
 
+        binding.sixAns4.editText?.doAfterTextChanged { binding.sixAns4.error = null }
 
         binding.nextSix.setOnClickListener {
             if (binding.sixAns1.checkedRadioButtonId == -1 ||

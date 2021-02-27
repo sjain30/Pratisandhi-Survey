@@ -3,6 +3,7 @@ package com.pratisandhi.survey.view
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pratisandhi.survey.R
@@ -29,6 +30,8 @@ class SectionThree : Fragment(R.layout.fragment_section_three) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel = ViewModelProvider(this).get(SectionThreeViewModel::class.java)
+
+        binding.editText8.editText?.doAfterTextChanged {  binding.editText8.error = null }
 
         binding.nextThree.setOnClickListener {
 
