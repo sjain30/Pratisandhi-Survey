@@ -16,7 +16,7 @@ Features:
 Technologies used:
 * [Firebase Authentication](https://firebase.google.com/docs/auth/android/google-signin?authuser=0)
 * [Room Persistence Library](https://developer.android.com/jetpack/androidx/releases/room)
-* [SQLite2XL](sakshampruthi/Pratisandhi-Survey)
+* [SQLite2XL](https://github.com/androidmads/SQLite2XL)
 
 ## Developers:
 
